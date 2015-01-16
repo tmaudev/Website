@@ -1,0 +1,211 @@
+.intro {
+	background: url(../img/space1.jpg) no-repeat bottom center scroll;
+   background-color: #000;
+}
+
+.content-section {
+    padding-top: 40px;
+}
+
+.mysection {
+	padding-top: 0px;
+}
+
+@media screen and (max-width: 1680px) {
+   .carousel-caption p {
+      font-size: 20px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 30px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 26px;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+
+   .carousel-caption p {
+      font-size: 18px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 28px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 24px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+
+   .carousel-caption p {
+      font-size: 16px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 26px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 22px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   
+   .carousel-caption p {
+      font-size: 16px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 24px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 20px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+
+   .carousel-caption p {
+      font-size: 16px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 22px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+   .carousel-caption p {
+      font-size: 14px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 18px;
+   }
+
+   .carousel-caption h3 {
+      font-size: 16px;
+   }
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+   padding-top: 0px;
+}
+
+.mylink {
+    font-size: 30px;
+    color: #219ab3;
+    border: 1px solid #219ab3;
+    text-transform: uppercase;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 80vh;
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0px;
+  right: 15%;
+  bottom: 0px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 0;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 74vh;
+  background-color: #000;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.carousel-indicators {
+  bottom: 0px;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+}
+
+.myscroll {
+	padding-top: 34vh;
+}
+
+@-webkit-keyframes myFadeDark {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+@keyframes myFadeDark {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+a.explore:hover, a.explore:focus {
+	color: white;
+	-webkit-animation: shadowFade 2s 1, myFadeDark 2s 1; /* Chrome, Safari, Opera */
+    animation: shadowFade 2s 1, myFadeDark 2s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+a.explore {
+	text-decoration: none;
+
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 50px;
+    
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shine
+{
+    0%
+    {
+        background-position: -50px;
+    }
+    100%
+    {
+        background-position: 250px;
+    }
+}
+
+/*
+.myexplore {
+	position: absolute;
+	top: 47%;
+	text-align:center;
+}*/

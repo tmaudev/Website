@@ -1,0 +1,189 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+
+    background-color: #404040
+}
+
+#myDescription {
+    -webkit-animation: myFade 10s 1; /* Chrome, Safari, Opera */
+    animation: titleFade 5s 1;
+
+    -webkit-animation: myFade 10s 1; /* Chrome, Safari, Opera */
+    animation: titleFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#myShadow {
+    -webkit-animation: shadowFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: shadowFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes shadowFade {
+    100% {text-shadow: 0 0 30px white;}
+}
+
+/* Standard syntax */
+@keyframes shadowFade {
+    100% {text-shadow: 0 0 30px white;}
+}
+
+section {
+    height:100vh;
+    padding-top: 20px;
+}
+
+header {
+    height:100vh;
+}
+
+.noshadow {
+    text-shadow: 0 0px 0px;
+}
+
+.mylabelyellow {
+    color: #FFCC00;
+}
+
+.mylabelgreen {
+    color: #1BC291;
+}
+
+.cpgreen {
+    color: #004730;
+}
+
+.cpgold {
+    color: #EAAA00;
+}
+
+.mylabelblue {
+    color: #219AB3;
+}
+
+.mylabelpurple {
+    color: #9900CC;
+}
+
+.parent {
+    display:table;
+    table-layout: fixed;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 90vw;
+}
+
+.content-section {
+    padding-top: 10px;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+@media(min-width: 992px) {
+    .content-section {
+	    padding-top: 150px;
+	}
+}
+
+@media(min-width: 767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+.intro {
+	background: url(../img/TronSmall.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.mylink {
+    font-size: 26px;
+    color: #219ab3;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default:focus {
+    border: 1px solid #219ab3;
+    outline: 0;
+    color: #404040;
+    background-color: #219ab3;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+hr{
+	margin-top: 0px;
+  	margin-bottom: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  	margin-top: 20px;
+  	margin-bottom: 6px;
+}

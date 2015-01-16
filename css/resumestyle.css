@@ -1,0 +1,49 @@
+.intro {
+	background: url(../img/EarthGlow.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+}
+
+.content-section {
+    padding-top: 60px;
+}
+
+body {
+    margin-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+}
+
+.pull-right {
+	float: right !important;
+	width: 50vmin;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.myblock {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mylist {
+	font-size: 4vmin;
+}
+
+.mytitle {
+	font-size: 5vmin;
+}
+
+.mymaintitle {
+	font-size: 6vmin;
+}
+
+.mylist2 {
+	font-size: 3.5vmin;
+}
+
+.mytitle2 {
+	font-size: 4.5vmin;
+}
