@@ -136,7 +136,7 @@ header {
 }
 
 .intro {
-	background: url(../img/TronSmall2.jpg) no-repeat bottom center scroll;
+	background: url(../img/TronSmall.jpg) no-repeat bottom center scroll;
     background-color: #000;
 }
 
