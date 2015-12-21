@@ -2,3 +2,66 @@
 	background: url(../img/Black_Blue.jpg) no-repeat bottom center scroll;
    background-color: #000;
 }
+
+#quadShadow {
+    -webkit-animation: quadFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: quadFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#rovShadow {
+    -webkit-animation: rovFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: rovFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#heartShadow {
+    -webkit-animation: heartFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: heartFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes quadFade {
+    100% {text-shadow: 0 0 30px #ffff66;}
+}
+
+/* Standard syntax */
+@keyframes quadFade {
+    100% {text-shadow: 0 0 30px #ffff66;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rovFade {
+    100% {text-shadow: 0 0 30px #33ccff;}
+}
+
+/* Standard syntax */
+@keyframes rovFade {
+    100% {text-shadow: 0 0 30px #33ccff;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes heartFade {
+    100% {text-shadow: 0 0 30px #ff5050;}
+}
+
+/* Standard syntax */
+@keyframes heartFade {
+    100% {text-shadow: 0 0 30px #ff5050;}
+}
