@@ -24,6 +24,34 @@
     -webkit-animation-fill-mode: forwards;
 }
 
+#orangeShadow {
+    -webkit-animation: orangeFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: orangeFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#greenShadow {
+    -webkit-animation: greenFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: greenFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#blueShadow {
+    -webkit-animation: blueFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: blueFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
+#purpleShadow {
+    -webkit-animation: purpleFade 5s 1, myFade 5s 1; /* Chrome, Safari, Opera */
+    animation: purpleFade 5s 1, myFade 5s 1;
+
+    -webkit-animation-fill-mode: forwards;
+}
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myFade {
     from {opacity: 0;}
@@ -64,4 +92,44 @@
 /* Standard syntax */
 @keyframes heartFade {
     100% {text-shadow: 0 0 30px #ff5050;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes orangeFade {
+    100% {text-shadow: 0 0 30px #ff9933;}
+}
+
+/* Standard syntax */
+@keyframes orangeFade {
+    100% {text-shadow: 0 0 30px #ff9933;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes greenFade {
+    100% {text-shadow: 0 0 30px #33cc33;}
+}
+
+/* Standard syntax */
+@keyframes greenFade {
+    100% {text-shadow: 0 0 30px #33cc33;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blueFade {
+    100% {text-shadow: 0 0 30px #3399ff;}
+}
+
+/* Standard syntax */
+@keyframes blueFade {
+    100% {text-shadow: 0 0 30px #3399ff;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes purpleFade {
+    100% {text-shadow: 0 0 30px #ff66d8;}
+}
+
+/* Standard syntax */
+@keyframes purpleFade {
+    100% {text-shadow: 0 0 30px #ff66d8;}
 }

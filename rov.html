@@ -55,6 +55,9 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#intro">Intro</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#hardware">Hardware</a>
                     </li>
                     <li>
@@ -78,9 +81,9 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading" id="myShadow">ROV</h1>
                         <p class="intro-text" id="myShadow">
-                            Design and development of an underwater ROV.
+                            Design and development of an underwater remotely operated vehicle.
                         </p>
-                        <a id="myShadow" href="#hardware" class="btn btn-circle page-scroll">
+                        <a id="myShadow" href="#intro" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                         <h3 id="myShadow">Explore</h3>
@@ -90,15 +93,108 @@
         </div>
     </header>
 
-    <!-- Quadcopter Section -->
+    <!-- Intro Section -->
+    <section id="intro" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    Introduction
+                </h1>
+                <p>
+                    Designing and implementing software to control the underwater ROV prototype being created by our Mechanical Engineering team.
+                </p>
+                <h2 class="mylabelblue">Client</h2>
+                <br>
+                <img src="img/Northrop.png" style="width:50%"></img>
+                <h2 class="mylabelgreen">Engineering Requirements</h2>
+                <h3 class="mylabelyellow">Control</h3>
+                <p>
+                    Remote-controlled movement capabilities via tether to control station.<br>
+                    Autonomous lateral stabilization within 1 meter from reference.
+                </p>
+                <h3 class="mylabelyellow">Communication</h3>
+                <p>
+                    Ability to communicate sensor and video data to control station.
+                </p>
+                <h3 class="mylabelyellow">Durability</h3>
+                <p>
+                    Operational at depths up to 10 meters (IPX8 waterproof standard).<br>
+                </p>
+                <a id="myShadow" href="#hardware" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Hardware</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
     <section id="hardware" class="container text-center parent">
         <div class="row child">
             <div class="col-lg-8 col-lg-offset-2">
                 <h1 class="text-center mylabelpurple">
-                    Hardware
+                    Hardware Design
                 </h1>
+                <img src="img/Hardware.png" style="width:80%"></img>
+                <h2 class="mylabelblue">Processing</h2>
+                <h3 class="mylabelyellow">BeagleBone Black</h3>
                 <p>
-                    Coming Soon...
+                    Micro-computer running Debian Linux. We utilize its faster processing power for tasks requiring low latency such as manual motor control and relaying live video feed.
+                </p>
+                <h3 class="mylabelyellow">Arduino Mega 2560</h3>
+                <p>
+                    The ATmega328p micro-controller's AVR architecture allows us to easily read sensor data through various interfaces. Isolates sensor reading/filtering from other processes for more consistent sampling.
+                </p>
+                <a id="myShadow" href="#software" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Software</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    Software Development
+                </h1>
+                <img src="img/Software.png" style="width:65%"></img>
+                <p>
+                    <br>
+                    Many of my embedded systems and robotics projects utilize similar concepts and algorithms. Visit my robotics software blog page for more details.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="http://tylermmau.com/robotics/category/software/" role="button">Robotics Software Blog &raquo;</a>
+                </p>
+                <a id="myShadow" href="#testing" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Testing</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Section -->
+    <section id="testing" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    System Testing
+                </h1>
+                <br>
+                <img src="img/OpenROV.jpg" style="width:40%"></img>
+                <h2 class="mylabelblue">OpenROV</h2>
+                <p>
+                    We will be using the OpenROV platform to test our software while the Mechanical Engineering team builds our first prototype.
+                </p>
+                <h2 class="mylabelgreen">Progress and Updates</h2>
+                <p>
+                    As we continue to develop and test our system, updates will be posted to my robotics blog.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="http://tylermmau.com/robotics/category/uuv/" role="button">ROV Progress &raquo;</a>
                 </p>
             </div>
         </div>
@@ -107,7 +203,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Tyler Mau 2014</p>
+            <p>Copyright &copy; Tyler Mau 2015</p>
         </div>
     </footer>
 

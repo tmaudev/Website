@@ -55,13 +55,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#intro">Intro</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#hardware">Hardware</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#filters">Filters</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#pid">PID</a>
+                        <a class="page-scroll" href="#software">Software</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#testing">Testing</a>
@@ -80,9 +80,9 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading" id="myShadow">UAV</h1>
-                        <p class="intro-text" id="myShadow">My progress designing and developing my quadcopter's control system.
+                        <p class="intro-text" id="myShadow">Design and development of an unmanned aerial vehicle.
                         </p>
-                        <a id="myShadow" href="#hardware" class="btn btn-circle page-scroll">
+                        <a id="myShadow" href="#intro" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                         <h3 id="myShadow">Explore</h3>
@@ -92,15 +92,107 @@
         </div>
     </header>
 
-    <!-- Quadcopter Section -->
+    <!-- Intro Section -->
+    <section id="intro" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    Introduction
+                </h1>
+                <p>
+                    An extracurricular hobby project involving the design and implementation of control software for a quadcopter.
+                </p>
+                <h2 class="mylabelgreen">Engineering Requirements</h2>
+                <h3 class="mylabelyellow">Manual Control</h3>
+                <p>
+                    Remote-controlled movement capabilities via RC transmitter.<br>
+                </p>
+                <h3 class="mylabelyellow">Autonomous Capabilities</h3>
+                <p>
+                    Travel to specified GPS coordinates within 2 meter accuracy range.<br>
+                    Maintain height via ultrasonic range finder within 10 cm accuracy range.<br>
+                </p>
+                <h3 class="mylabelyellow">Fail-Safes</h3>
+                <p>
+                    Voltage monitor for low battery alert.<br>
+                    Safe landing feature if connection lost with transmitter.
+                </p>
+                <a id="myShadow" href="#hardware" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Hardware</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
     <section id="hardware" class="container text-center parent">
         <div class="row child">
             <div class="col-lg-8 col-lg-offset-2">
                 <h1 class="text-center mylabelpurple">
                     Hardware
                 </h1>
+                <br>
+                <img src="img/ArduinoMega.png" style="width:60%"></img>
+                <h2 class="mylabelblue">Processing</h2>
+                <h3 class="mylabelyellow">Arduino Mega 2560</h3>
                 <p>
-                    Coming Soon...
+                    The ATmega328p micro-controller's AVR architecture allows me to easily read sensor data through various interfaces. The Arduino Mega's multi-purpose GPIO pins, support for numerous PWM channels, and multiple interrupt pins allow for flexible development.
+                </p>
+                <a id="myShadow" href="#software" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Software</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section id="software" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    Software Development
+                </h1>
+                <img src="img/QuadcopterSoftware.png" style="width:50%"></img>
+                <p>
+                    <br>
+                    Many of my embedded systems and robotics projects utilize similar concepts and algorithms. Visit my robotics software blog page for more details.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="http://tylermmau.com/robotics/category/software/" role="button">Robotics Software Blog &raquo;</a>
+                </p>
+                <a id="myShadow" href="#testing" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+                <h3 id="myShadow">Testing</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Section -->
+    <section id="testing" class="container text-center parent">
+        <div class="row child">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="text-center mylabelpurple">
+                    System Testing
+                </h1>
+                <br>
+                <img src="img/Frame.png" style="width:40%"></img>
+                <p>
+                    <br>
+                    The first prototype will be built using a pre-manufactured fiberglass frame.
+                </p>
+                <h2 class="mylabelblue">Test Station</h2>
+                <p>
+                    I will be building a test station that allows for safe flight testing. This is important to prevent injury to observers as well as the system and surrounding equipment.
+                </p>
+                <h2 class="mylabelgreen">Progress and Updates</h2>
+                <p>
+                    As I continue to develop and test the system, updates will be posted to my robotics blog.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="http://tylermmau.com/robotics/category/uav/" role="button">UAV Progress &raquo;</a>
                 </p>
             </div>
         </div>
@@ -109,7 +201,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Tyler Mau 2014</p>
+            <p>Copyright &copy; Tyler Mau 2015</p>
         </div>
     </footer>
 
